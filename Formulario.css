@@ -1,0 +1,78 @@
+body {
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+nav {
+  display: flex; 
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 100px; 
+}
+
+nav div {
+  width: 100px;
+  background-color: rgb(231, 212, 187);
+  border: solid;
+  border-radius: 500px;
+  border-width: 1px;
+}
+
+nav div a {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+}
+
+.Nombre,
+.email,
+.Edad {
+  padding-left: 10px;
+  padding-top: 20px;
+  text-decoration: underline;
+  color: black;
+  transition: padding 1s, color 1s;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.Nombre:hover,
+.email:hover,
+.Edad:hover {
+  color: red;
+  padding-left: 100px;
+}
+
+.Ball {
+  margin-top: 50px;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(146, 146, 109);
+  color: rgb(250, 235, 215);
+  position: relative;
+  animation: complexanimation 10s infinite;
+}
+
+@keyframes complexanimation {
+  0% {
+    background-color: rgb(250, 235, 215);
+    transform: scale(1) translateX(0px);
+  }
+  25% {
+    background-color: rgb(194, 139, 220);
+    transform: scale(1.5) translateX(1165px);
+  }
+  50% {
+    background-color: rgb(138, 43, 226);
+    transform: scale(1) translateX(0px);
+  }
+  75% {
+    background-color: rgb(194, 139, 220);
+    transform: scale(1.5) translateX(1165px);
+  }
+  100% {
+    background-color: rgb(250, 235, 215);
+    transform: scale(1) translateX(0px);
+  }
+}
